@@ -1,3 +1,106 @@
 .wrapper {
-  width: 356px;
+  position: fixed;
+  transform: translateY(var(--default-layout-header-height));
+  width: var(--default-sidebar-wrapper-width);
+  padding: 20px 4px 26px 4px;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - var(--default-layout-header-height));
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  & ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0);
+  }
+
+  & ::-webkit-scrollbar-thumb:hover {
+    background: #55555500;
+  }
+  .framebox,
+  .navmain-link {
+    width: 100%;
+  }
+  .navmain {
+    margin-bottom: 8px;
+  }
+  .navmain-link {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 8px;
+    font-weight: 700;
+    transition: background 0.2s linear;
+  }
+  .framebox {
+    height: 178px;
+    padding: 20px 8px 24px;
+  }
+  .divsplit {
+    position: relative;
+    height: 1px;
+    background: rgba(22, 24, 35, 0.12);
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    top: 0;
+  }
+}
+
+.navmain-link {
+  cursor: pointer;
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+  }
+  &:first-child {
+    color: var(--primary-color);
+  }
+  span {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  .navlink-content {
+    color: rgb(255, 255, 255);
+    height: 20px;
+    padding: 0px 8px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+}
+.framebox {
+  p {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.navfooter {
+  padding-top: 16px;
+  padding-left: 8px;
+  &-link {
+    margin-bottom: 8px;
+    a {
+      color: rgba(22, 24, 35, 0.5);
+      font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC,
+        sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 17px;
+      display: inline-block;
+      margin-right: 6px;
+      margin-top: 5px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
