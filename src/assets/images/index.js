@@ -11,5 +11,9 @@ const images = {
   searchItemIcon: require("./searchItemIcon.svg").default,
   uploadIcon: require("./uploadicon.svg").default,
   menuIcon: require("./menuicon.svg").default,
+  transIcon: require("./trans.svg").default,
+  spIcon: require("./support.svg").default,
+  keycapIcon: require("./keycap.svg").default,
+  nightIcon: require("./night.svg").default,
 };
 export default images;

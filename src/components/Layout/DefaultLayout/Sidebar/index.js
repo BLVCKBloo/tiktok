@@ -1,13 +1,7 @@
 import classNames from "classnames/bind";
 import style from "./Sidebar.module.scss";
 import images from "~/assets/images";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCompass,
-  faHome,
-  faUser,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Button from "~/components/Button";
 const cx = classNames.bind(style);
 
@@ -17,7 +11,8 @@ function Sidebar() {
       <nav className={cx("navmain")}>
         <ul className={cx("navmain-ul")}>
           <li className={cx("navmain-link")}>
-            <img src={images.navHomeChecked} alt="" />
+            <img fill="red" src={images.navHomeChecked} alt="" />
+
             <span>Dành cho bạn</span>
           </li>
           <li className={cx("navmain-link")}>

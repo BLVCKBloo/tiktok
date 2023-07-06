@@ -1,0 +1,131 @@
+.search-list {
+  font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC,
+    sans-serif;
+  padding: 9px 16px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+  }
+  img {
+    margin-right: 8px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #161823;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #16182380;
+  }
+}
+
+.search-user {
+  &-avata {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0px 12px 0px 0px;
+    padding: 0px;
+    font-feature-settings: "tnum";
+    position: relative;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border-radius: 50%;
+    background-color: rgba(136, 136, 136, 0.5);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+.setting-item {
+  img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+  }
+  h4 {
+    font-weight: 600;
+  }
+}
+
+// .search-list {
+//   font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC,
+//     sans-serif;
+//   padding: 9px 16px;
+//   cursor: pointer;
+//   display: flex;
+//   -webkit-box-align: center;
+//   align-items: center;
+//   &.account {
+//     .user-avata {
+//       display: inline-block;
+//     }
+//     .user-content {
+//       display: block;
+//     }
+//   }
+//   &.list {
+//     .list-icon,
+//     .list-content {
+//       display: block;
+//     }
+//   }
+//   &:hover {
+//     background: rgba(22, 24, 35, 0.03);
+//   }
+//   img {
+//     margin-right: 8px;
+//   }
+//   h4 {
+//     font-weight: 500;
+//     font-size: 16px;
+//     color: black;
+//   }
+//   span {
+//     font-size: 14px;
+//     font-weight: 400;
+//     color: #16182380;
+//   }
+// }
+// .list-icon,
+// .list-content,
+// .user-avata,
+// .user-content {
+//   display: none;
+// }
+// .user-avata {
+//   display: none;
+//   width: 40px;
+//   height: 40px;
+//   box-sizing: border-box;
+//   margin: 0px 12px 0px 0px;
+//   padding: 0px;
+//   font-feature-settings: "tnum";
+//   position: relative;
+//   overflow: hidden;
+//   color: rgb(255, 255, 255);
+//   white-space: nowrap;
+//   text-align: center;
+//   vertical-align: middle;
+//   line-height: 32px;
+//   border-radius: 50%;
+//   background-color: rgba(136, 136, 136, 0.5);
+//   & img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: fill;
+//   }
+// }

@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   border-radius: 4px;
   user-select: none;
   padding: 6px 8px;
@@ -7,6 +8,8 @@
   border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
+  // font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC,
+  //   sans-serif;
   &.small {
     height: 24px;
   }
@@ -16,6 +19,7 @@
   &.large {
     height: 48px;
   }
+  &,
   span {
     display: flex;
     align-items: center;
@@ -26,8 +30,7 @@
     width: 20px;
   }
 }
-.login,
-.menu {
+.login {
   margin-left: 16px;
 }
 .login {
@@ -39,6 +42,7 @@
   }
 }
 .upload {
+  position: relative;
   padding: 0 16px;
   border-color: rgba(128, 128, 128, 0.274);
   font-weight: 600;
@@ -50,8 +54,9 @@
   }
 }
 .menu {
-  padding: 0 4px;
+  position: relative;
 }
+
 .frame-btn {
   border-color: var(--primary-color);
   color: var(--primary-color);
@@ -60,6 +65,7 @@
   min-width: 168px;
   line-height: 25px;
   margin-top: 20px;
+  font-weight: 500;
   width: 100%;
   &:hover {
     background-color: rgba(254, 44, 85, 0.06);
